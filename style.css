@@ -1,0 +1,161 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background:rgb(220, 220, 220);
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background:rgb(220, 220, 220);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+.mainPageLink {
+    display:flex;
+}
+
+h1{
+    margin: 0;
+    font-size: 1.5rem;
+    
+}
+
+.navUl{
+    display:flex;
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+li{
+    margin-left: 20px;
+}
+
+main{
+    display:Flex;
+    max-width:1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+article{
+    flex:1;
+    padding-top: 1rem;
+}
+
+section{
+    flex:3;
+}
+
+picture{
+    display:flex;
+    justify-content: center;
+}
+
+img{
+
+    max-width:80%;
+}
+
+footer{
+    background: black;
+    color:white;
+    padding: 0 1.25rem;
+    overflow: auto;
+}
+
+footer p{
+    
+    text-align: end;
+}
+
+footer ul {
+    
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 0;
+    line-height: 1.5rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#toggler,
+label {
+    display: none;
+}
+
+h3{
+    margin-bottom: 0;
+}
+
+p{
+    margin-top: 0;
+}
+
+@media (max-width: 768px){
+    .navUl{
+        position: absolute;
+        right:0;
+        top: 100%;
+        flex-direction: column;
+        background:rgb(233, 209, 209);
+        line-height: 2rem;
+        padding: 1rem;
+        pointer-events: none;
+        opacity: 0;
+        transition: .75s;
+     }
+     #toggler:checked ~ .navUl{
+        pointer-events: all;
+        opacity: 1;
+     }
+     label{
+        display: flex;
+        height: 2rem;
+        width: 2rem;
+        position: relative;
+     }
+     label div{
+        position: absolute;
+        width: 80%;
+        height: 10%;
+        left: 10%;
+        background: rgb(0, 0, 0);
+        transition: .5s;
+     }
+    .l1{ top:17.5% }
+    .l2{ top:45% } 
+    .l3{ top:72.5% }
+
+    #toggler:checked ~ label .l1{
+        top: 45%;
+        transform: rotate(45deg);
+    }
+    #toggler:checked ~ label .l2{
+        transform: rotate(135deg)
+    }
+    #toggler:checked ~ label .l3{
+        top: 45%;
+        transform: rotate(45deg);
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+}
