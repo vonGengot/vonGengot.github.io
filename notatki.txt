@@ -1,0 +1,158 @@
+framework - java scr + vue
+litehouse - badanie strony internetowej F12
+
+paintnet - robi zdjęcia pod strony
+
+caniuse.com - przydatna strona
+
+https://metatags.io/
+https://praktykody.github.io/#/
+http://127.0.0.1:5500/index.html
+https://fonts.google.com/specimen/Source+Sans+Pro?preview.text=Pawe%C5%82%20G%C4%99gotek&preview.text_type=custom
+https://flexboxfroggy.com/#pl
+https://stackoverflow.com/ - społecznośc jak coś nie idzie dobrze
+
+html - jest to język znaczników
+
+tag tr - bubuje linie w "table"
+tag th - nagłówek
+tag tbody - treść
+<body>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>lp.</th>
+                <th>nazwa</th>
+                <th>cena</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>rower</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>bidon</td>
+                <td>500</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+W Vsual Studio - połączenie z GITHUBEM
+Ctrk + tylda
+PS C:\Users\admin\Desktop\pg> git config --global user.name vongengot
+PS C:\Users\admin\Desktop\pg> git config --global user.email pawel.gegotek.praca@gmail.com
+klonowanie na pulpit: z poziomu Desktop
+PS C:\Users\admin\Desktop> git clone https://github.com/vonGengot/vonGengot.github.io
+
+opisanie repozytorium
+tworzymy nowy plik w VisualuSt. "readme.dm i nadajemy mu nazwę
+
+head - to czego nie widać na stronie
+
+body - to co widać - tło
+
+header - nagłówek całej strony
+
+alt - opis obrazka
+
+Visual Studio  Code - edytor kodu
+
+a href - wsawianie łącza na stronie
+a - hiperłącze, link na stronie do innych stron
+
+h1 -  najważniejszy tag na strronie - h1 - tylko raz
+h1- jeden raz na stronie, booty indeksują po tym
+
+nav - nawigacaj
+
+ol - lista numerowana
+
+ul - lista nienumerowana
+li - elementy listy
+
+main - najważniejsza część na stronie (treść), jeden raz na stronie, nusi być na samej górze - rodzic, bezpośrednio pod body
+
+article - część strony pod main
+
+picture - miejsce w którym możemy warunkować ustawienie zamieszczonego zdjęcia. 
+
+img - scr - link do strony, 
+
+alt - opis zdjęcia , pokazuje się jak nie ma zdjęcia, booty rozpoznają po tej nazwia
+
+section - część strony, tematyczny zgrupowany kontekst. np sekcja koment.
+
+div - class - możemy odnieść się do fragmentu stony - w style - odnośimy się popezez "."
+
+footer - stopka
+	<ul>
+            <li><a target="_blank" ref="https://fb.com">Facebook</a></li>
+            <li><a target="_blank" href="https://twetter.com">Twitter</a></li>
+            <li><a target="_blank" href="https://instagram.com">Instagram</a></li>
+        </ul>
+
+
+przyłączenie pliku CSS do html  - tag "link rel"
+
+CSS
+selector{
+właściwość: ;
+}
+np - selector  - body, header, .mainPageLink, h1 .... 
+włąsciwości - display:flex (wrzucany na rodzica - a u dzieci można ustawić stosunek między nimi np 1 do 3); border; justifi-content, 
+flex; align-item; .....
+
+div - sekcja z tekstem
+
+p - wyróżnienie paragrafu
+
+font-size: 1rem; - wysokość podstawowa użytkownika,
+
+rem - ma sztywną wartość w stosunku do wartości użytkownika
+
+em - dostosowuje się do poprzedniej wartoćsi np. en1 -> em2 -> em3 (1-2-4)
+
+Position: 	- static - standard
+		- fixed (top, bottom, left, right)  - zamraża w 		danym miejscu
+		- sticky - zachowuje się normalnie jak static, 		ale można narzucić warunki,
+		- absolute - może pomijać rodziców i pdpowiadać 		dziadkom, ignoruje także rodzeństwo, 
+
+
+tylko style dla użądzeń mobilnych:
+@media (){
+
+    
+}
+
+display: FLEX (powoduje że elementy są jeden obok drugiego)
+
+justify-content (oś X) |flex-start
+
+align-items (oś Y)     |flex-end
+			|center
+			|space-evenly
+			|space-around
+			|space-between
+______________________________________
+typy czcioni - font familly
+
+flex-direction:	(zmienia kierunek) 	|row
+					|row-reverse
+		(transponuje)		|column
+					|column-reverse
+
+flex-wrap 	(pozwala rozszerrzyć się na inne wiersze, jeżli wymiary są niewłaściwe) |wrap-reverse
+											|wrap
+											|nowrap
+
+text-align: end; - ustawia text po prawej stronie
+
+
+
+<main> - najważniejszy tag na stronie
