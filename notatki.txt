@@ -1,3 +1,4 @@
+https://www.pwabuilder.com/reportcard?site=https://vongengot.github.io/
 framework - java scr + vue
 litehouse - badanie strony internetowej F12
 
